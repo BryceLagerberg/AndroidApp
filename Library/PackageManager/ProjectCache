@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637642279791480742
-    m_Hash: 2704633475
+      ticks: 637642312320763256
+    m_Hash: 1207335426
   m_LockFileStatus:
     m_FilePath: E:/Unity Projects/AndroidApp/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637642279791940596
-    m_Hash: 1734658543
+      ticks: 637642312320763256
+    m_Hash: 1863280878
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
