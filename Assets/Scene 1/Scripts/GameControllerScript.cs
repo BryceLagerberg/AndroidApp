@@ -17,17 +17,23 @@ namespace GameSpace
         private Vector3 Player1StartPostiion;
         private Vector3 Player2StartPostiion;
 
+        [Header("Player Stats")]
+        public TMPro.TextMeshProUGUI Player1Stats;
+        public TMPro.TextMeshProUGUI Player2Stats;
+
         [Header("Ball Transform")]
         public Transform Ball;
 
         [Header("Scores")]
-        public GameObject ScoreScreen;
+        public TMPro.TextMeshProUGUI ScoreScreen;
         public int Player1Score = 0;
         public int Player2Score = 0;
 
         [Header("Menu Buttons")]
         public List<GameObject> MenuButtons;
         public KeyCode MenuKey = KeyCode.Escape;
+
+        
 
 
         // Enums
@@ -103,7 +109,7 @@ namespace GameSpace
         }
         private void UpdateScores()
         {
-            ScoreScreen.GetComponent<TMPro.TextMeshProUGUI>().text = $"[Scores]\nP1: {Player1Score}\nP2: {Player2Score}";
+            ScoreScreen.text = $"[Scores]\nP1: {Player1Score}\nP2: {Player2Score}";
         }
         public void Win(Player P)
         {
