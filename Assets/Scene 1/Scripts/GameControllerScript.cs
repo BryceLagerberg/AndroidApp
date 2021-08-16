@@ -6,11 +6,30 @@ namespace GameSpace
 {
     public static class GameInstance
     {
+        
+        
+
         public static bool Paused = true;
+
+        public static void PauseGame()
+        {
+            GameInstance.Paused = true;
+        }
+        public static void ResumeGame()
+        {
+            GameInstance.Paused = false;
+        }
+
     }
 
     public class GameControllerScript : MonoBehaviour
     {
+
+        [Header("Menu Buttons")]
+        public List<GameObject> MenuButtons;
+        public KeyCode MenuKey = KeyCode.Escape;
+
+
         [Header("Player Paddles")]
         public Transform Paddle1;
         public Transform Paddle2;
@@ -25,15 +44,12 @@ namespace GameSpace
         public Transform Ball;
 
         [Header("Scores")]
-        public TMPro.TextMeshProUGUI ScoreScreen;
-        public int Player1Score = 0;
-        public int Player2Score = 0;
+        public  TMPro.TextMeshProUGUI ScoreScreen;
+        public  int Player1Score = 0;
+        public  int Player2Score = 0;
 
-        [Header("Menu Buttons")]
-        public List<GameObject> MenuButtons;
-        public KeyCode MenuKey = KeyCode.Escape;
-
-        
+        [Header("Other Stuff")]
+        public GameObject GameStartCountdownObject;
 
 
         // Enums
@@ -61,38 +77,46 @@ namespace GameSpace
         // Game Functions
         public void StartTwoPlayerGame()
         {
-            // Single Player - Enable AI
-            Paddle2.GetComponent<Paddle>().AIEnabled = false;
+            HideMenu();
 
-            StartGame();
-        }
-        public void StartSinglePlayerGame()
-        {
             // Single Player - Enable AI
             Paddle2.GetComponent<Paddle>().AIEnabled = true;
 
-            StartGame();
+        }
+        public void StartSinglePlayerGame()
+        {
+            HideMenu();
+
+            // Single Player - Enable AI
+            Paddle2.GetComponent<Paddle>().AIEnabled = true;
+
+            StartWithCountdown();
+        }
+        private void StartWithCountdown()
+        {
+            // Reset the Players
+            //Paddle1.position = Player1StartPostiion;
+            //Paddle2.position = Player2StartPostiion;
+
+            // Launch the Ball
+            Ball.GetComponent<Ball>().ReLaunch();
+
+            // Start the countdown effect
+            GameStartCountdownObject.GetComponent<CountDownScript>().StartCountdownEffect();
         }
         private void StartGame()
         {
             GameInstance.Paused = false;
-            HideMenu();
 
             // Reset the Players
-            Paddle1.position = Player1StartPostiion;
-            Paddle2.position = Player2StartPostiion;
+            //Paddle1.position = Player1StartPostiion;
+            //Paddle2.position = Player2StartPostiion;
 
             // Launch the Ball
             Ball.GetComponent<Ball>().ReLaunch();
         }
-        public void PauseGame()
-        {
-            GameInstance.Paused = true;
-        }
-        public void ResumeGame()
-        {
-            GameInstance.Paused = false;
-        }
+        
+
         public void ShowMenu()
         {
             foreach (GameObject Button in MenuButtons)
@@ -107,6 +131,8 @@ namespace GameSpace
                 Button.SetActive(false);
             }
         }
+
+
         private void UpdateScores()
         {
             ScoreScreen.text = $"[Scores]\nP1: {Player1Score}\nP2: {Player2Score}";
@@ -137,21 +163,24 @@ namespace GameSpace
         // Update is called once per frame
         void Update()
         {
-            // Menu Key
+            // Menu Open / Close
             if (Input.GetKeyDown(MenuKey))
             {
                 if (GameInstance.Paused)
                 {
                     HideMenu();
-                    ResumeGame();
+                    GameInstance.ResumeGame();
                 }
                 else
                 {
-                    PauseGame();
+                    GameInstance.PauseGame();
                     ShowMenu();
                 }
                 ;
             }
+
+
         }
+
     }
 }

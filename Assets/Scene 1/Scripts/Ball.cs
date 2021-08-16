@@ -12,6 +12,7 @@ namespace GameSpace
         public Rigidbody2D rb;
         public Vector2 ScreenDimensions;
 
+        // Privates
         private Vector2 PausedVelocity = new Vector2(0f, 0f);
 
 
@@ -43,6 +44,7 @@ namespace GameSpace
             if (this.transform.position.y >= ScreenDimensions.y) { rb.velocity = new Vector2(rb.velocity.x, Mathf.Abs(rb.velocity.y) * -1); }
             if (this.transform.position.y <= ScreenDimensions.y * -1) { rb.velocity = new Vector2(rb.velocity.x, Mathf.Abs(rb.velocity.y)); }
 
+
             // Goal Touch
             if (this.transform.position.x >= ScreenDimensions.x)
             {
@@ -55,6 +57,7 @@ namespace GameSpace
                 // Player 2 Goal!
                 GameObject.Find("_GameManager").GetComponent<GameControllerScript>().Win(GameControllerScript.Player.Player2);
             }
+
         }
 
         public void ReLaunch()
