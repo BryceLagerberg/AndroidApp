@@ -1,12 +1,14 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - BudgetTrackerController
     - ButtonScript
     - FixedJoystick
     - GameSpace.Ball
     - GameSpace.CountDownScript
     - GameSpace.GameControllerScript
     - GameSpace.Paddle
+    - StaticScript
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
@@ -36,6 +38,61 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Image
     - UnityEngine.UI.Text
   sceneClasses:
+    Assets/BudgetTracker/BudgetTracker.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1576}
+    - Class: 114
+      Script: {instanceID: 2746}
+    - Class: 114
+      Script: {instanceID: 2972}
+    - Class: 114
+      Script: {instanceID: 3290}
+    - Class: 114
+      Script: {instanceID: 5732}
+    - Class: 114
+      Script: {instanceID: 6078}
+    - Class: 114
+      Script: {instanceID: 6618}
+    - Class: 114
+      Script: {instanceID: 8092}
+    - Class: 114
+      Script: {instanceID: 31472}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
     Assets/MainMenu.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -70,27 +127,29 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1576}
     - Class: 114
-      Script: {instanceID: 2258}
+      Script: {instanceID: 2264}
     - Class: 114
-      Script: {instanceID: 2740}
+      Script: {instanceID: 2746}
     - Class: 114
-      Script: {instanceID: 2964}
+      Script: {instanceID: 2972}
     - Class: 114
-      Script: {instanceID: 3282}
+      Script: {instanceID: 3290}
     - Class: 114
-      Script: {instanceID: 4394}
+      Script: {instanceID: 4402}
     - Class: 114
-      Script: {instanceID: 4664}
+      Script: {instanceID: 4674}
     - Class: 114
-      Script: {instanceID: 5406}
+      Script: {instanceID: 5424}
     - Class: 114
-      Script: {instanceID: 5714}
+      Script: {instanceID: 5732}
     - Class: 114
-      Script: {instanceID: 6060}
+      Script: {instanceID: 6078}
     - Class: 114
-      Script: {instanceID: 6598}
+      Script: {instanceID: 6618}
     - Class: 114
-      Script: {instanceID: 8068}
+      Script: {instanceID: 8092}
+    - Class: 114
+      Script: {instanceID: 28776}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -145,33 +204,33 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1576}
     - Class: 114
-      Script: {instanceID: 2740}
+      Script: {instanceID: 2154}
     - Class: 114
-      Script: {instanceID: 2964}
+      Script: {instanceID: 2746}
     - Class: 114
-      Script: {instanceID: 3282}
+      Script: {instanceID: 2972}
     - Class: 114
-      Script: {instanceID: 5104}
+      Script: {instanceID: 3290}
     - Class: 114
-      Script: {instanceID: 5338}
+      Script: {instanceID: 5114}
     - Class: 114
-      Script: {instanceID: 5406}
+      Script: {instanceID: 5354}
     - Class: 114
-      Script: {instanceID: 5714}
+      Script: {instanceID: 5424}
     - Class: 114
-      Script: {instanceID: 6060}
+      Script: {instanceID: 5732}
     - Class: 114
-      Script: {instanceID: 6232}
+      Script: {instanceID: 6078}
     - Class: 114
-      Script: {instanceID: 6598}
+      Script: {instanceID: 6250}
     - Class: 114
-      Script: {instanceID: 8068}
+      Script: {instanceID: 6618}
     - Class: 114
-      Script: {instanceID: 8342}
+      Script: {instanceID: 8092}
     - Class: 114
-      Script: {instanceID: 8446}
+      Script: {instanceID: 8366}
     - Class: 114
-      Script: {instanceID: 25194}
+      Script: {instanceID: 8470}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -253,10 +312,22 @@ ScriptsOnlyBuild:
     className: UnityOnMouseExitMessageListener
   - hash:
       serializedVersion: 2
+      Hash: ce669872a2be11bc686ea22961d8a3bb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FixedJoystick
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnTriggerEnterMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 9dac16f3efc511835ac976dfae55f580
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: VariableJoystick
   - hash:
       serializedVersion: 2
       Hash: 800c50acba124432abb4cf0d47202e06
@@ -341,6 +412,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 6209a8b1a96b0f2033bcac40fcd6e787
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: JoyStickScript
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -595,6 +672,12 @@ ScriptsOnlyBuild:
     className: DictionaryAsset
   - hash:
       serializedVersion: 2
+      Hash: 528e9858840cb8370d93939fff6b42d9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: JoystickPlayerExample
+  - hash:
+      serializedVersion: 2
       Hash: 6980e81ddc615a861309d2d659cc3760
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -647,6 +730,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnEndDragMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 824e8d4cb47ffd88ddf959dbd4526585
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DynamicJoystick
   - hash:
       serializedVersion: 2
       Hash: 24c74cc0d527a06113f2b967042769f0
@@ -707,6 +796,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: GameSpace
     className: Paddle
+  - hash:
+      serializedVersion: 2
+      Hash: ce669872a2be11bc686ea22961d8a3bb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Joystick
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -815,6 +910,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnMouseUpAsButtonMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 9e27f44bbf48228f203a37254d40f8ae
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: JoystickSetterExample
   - hash:
       serializedVersion: 2
       Hash: 748dd2a2a28da4e618912da5ac45684b
@@ -959,6 +1060,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: EventTrigger
+  - hash:
+      serializedVersion: 2
+      Hash: ce669872a2be11bc686ea22961d8a3bb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FloatingJoystick
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1111,54 +1218,19 @@ ScriptsOnlyBuild:
     className: UnityOnSliderValueChangedMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 824e8d4cb47ffd88ddf959dbd4526585
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: DynamicJoystick
+    className: StaticScript
   - hash:
       serializedVersion: 2
-      Hash: ce669872a2be11bc686ea22961d8a3bb
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: FloatingJoystick
-  - hash:
-      serializedVersion: 2
-      Hash: 9dac16f3efc511835ac976dfae55f580
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: VariableJoystick
-  - hash:
-      serializedVersion: 2
-      Hash: ce669872a2be11bc686ea22961d8a3bb
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Joystick
-  - hash:
-      serializedVersion: 2
-      Hash: 528e9858840cb8370d93939fff6b42d9
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: JoystickPlayerExample
-  - hash:
-      serializedVersion: 2
-      Hash: 9e27f44bbf48228f203a37254d40f8ae
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: JoystickSetterExample
-  - hash:
-      serializedVersion: 2
-      Hash: ce669872a2be11bc686ea22961d8a3bb
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: FixedJoystick
-  - hash:
-      serializedVersion: 2
-      Hash: 6209a8b1a96b0f2033bcac40fcd6e787
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: JoyStickScript
+    className: BudgetTrackerController
   platform: 13
   scenePathNames:
   - Assets/MainMenu.unity
   - Assets/Scene 1/Scene1.unity
-  playerPath: E:/Unity Projects/AndroidApp/Pong.apk
+  - Assets/BudgetTracker/BudgetTracker.unity
+  playerPath: C:/Users/bryce/AndroidAppBETA/BudgetTrackerSetupBuild.apk

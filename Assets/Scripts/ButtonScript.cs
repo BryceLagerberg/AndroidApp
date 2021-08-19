@@ -20,4 +20,5 @@ public class ButtonScript : MonoBehaviour
         Debug.Log($"Loading {SceneName}");
         UnityEngine.SceneManagement.SceneManager.LoadScene(SceneName);
     }
+
 }

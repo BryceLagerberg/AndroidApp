@@ -301,11 +301,11 @@
 -r:"C:/Program Files/Unity/Hub/Editor/2021.1.16f1/Editor/Data/NetStandard/Extensions/2.0.0/System.Numerics.Vectors.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.1.16f1/Editor/Data/NetStandard/Extensions/2.0.0/System.Runtime.InteropServices.WindowsRuntime.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.1.16f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll"
--r:"E:/Unity Projects/AndroidApp/Library/PackageCache/com.unity.analytics@3.5.3/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll"
--r:"E:/Unity Projects/AndroidApp/Library/PackageCache/com.unity.analytics@3.5.3/Unity.Analytics.Editor.dll"
--r:"E:/Unity Projects/AndroidApp/Library/PackageCache/com.unity.analytics@3.5.3/Unity.Analytics.Tracker.dll"
--r:"E:/Unity Projects/AndroidApp/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll"
--r:"E:/Unity Projects/AndroidApp/Library/PackageCache/com.unity.visualscripting@1.6.1/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
+-r:"C:/Users/bryce/AndroidAppBETA/Library/PackageCache/com.unity.analytics@3.5.3/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll"
+-r:"C:/Users/bryce/AndroidAppBETA/Library/PackageCache/com.unity.analytics@3.5.3/Unity.Analytics.Editor.dll"
+-r:"C:/Users/bryce/AndroidAppBETA/Library/PackageCache/com.unity.analytics@3.5.3/Unity.Analytics.Tracker.dll"
+-r:"C:/Users/bryce/AndroidAppBETA/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll"
+-r:"C:/Users/bryce/AndroidAppBETA/Library/PackageCache/com.unity.visualscripting@1.6.1/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/Analytics.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/Purchasing.Common.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/Unity.2D.Sprite.Editor.ref.dll"
@@ -341,6 +341,7 @@
 -r:"Library/Bee/artifacts/1300b0aE.dag/UnityEngine.UI.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/UnityEngine.XR.LegacyInputHelpers.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/VSSettingsProvider.ref.dll"
+"Assets/BudgetTracker/Scripts/BudgetTrackerController.cs"
 "Assets/Scene 1/Joystick Pack/Examples/JoystickPlayerExample.cs"
 "Assets/Scene 1/Joystick Pack/Examples/JoystickSetterExample.cs"
 "Assets/Scene 1/Joystick Pack/Scripts/Base/Joystick.cs"
@@ -354,6 +355,7 @@
 "Assets/Scene 1/Scripts/JoyStickScript.cs"
 "Assets/Scene 1/Scripts/Paddle.cs"
 "Assets/Scripts/ButtonScript.cs"
+"Assets/Scripts/StaticScript.cs"
 -langversion:8.0
 
 /deterministic

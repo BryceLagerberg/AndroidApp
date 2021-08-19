@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scene 1/Scene1.unity
+- path: Assets/BudgetTracker/BudgetTracker.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

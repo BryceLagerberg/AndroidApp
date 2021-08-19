@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scene 1/Scene1.unity
     guid: 5d0dda42f735ebf4dbe6ca1e5c7f50df
+  - enabled: 1
+    path: Assets/BudgetTracker/BudgetTracker.unity
+    guid: a88ca312b571ef546b0678126374b2fd
   m_configObjects: {}
