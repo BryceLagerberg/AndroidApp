@@ -112,6 +112,11 @@
 -define:ENABLE_LEGACY_INPUT_MANAGER
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
+-r:"Assets/Plugins/GitHub/Editor/GitHub.Api.45.dll"
+-r:"Assets/Plugins/GitHub/Editor/GitHub.Logging.dll"
+-r:"Assets/Plugins/GitHub/Editor/GitHub.Unity.45.dll"
+-r:"Assets/Plugins/GitHub/Editor/GitHub.UnityShim.dll"
+-r:"Assets/Plugins/GitHub/Editor/sfw.net.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.1.16f1/Editor/Data/Managed/UnityEditor.Graphs.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.1.16f1/Editor/Data/Managed/UnityEngine/UnityEditor.CoreModule.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.1.16f1/Editor/Data/Managed/UnityEngine/UnityEditor.DeviceSimulatorModule.dll"
@@ -320,6 +325,7 @@
 -r:"C:/Users/bryce/AndroidAppBETA/Library/PackageCache/com.unity.visualscripting@1.6.1/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll"
 -r:"C:/Users/bryce/AndroidAppBETA/Library/PackageCache/com.unity.visualscripting@1.6.1/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/Analytics.ref.dll"
+-r:"Library/Bee/artifacts/1300b0aE.dag/Assembly-CSharp-Editor-firstpass.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/Assembly-CSharp.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/Purchasing.Common.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/Unity.2D.Sprite.Editor.ref.dll"

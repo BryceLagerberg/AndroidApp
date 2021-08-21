@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 1
-  lastUpdatedAtString: 2021-08-08T14:34:16.121-07:00
-  initializedAtString: 2021-08-08T14:28:15.715-07:00
+  lastUpdatedAtString: 2021-08-21T14:24:43.686-07:00
+  initializedAtString: 2021-08-21T14:24:43.686-07:00
   currentGitRemote:
     name: origin
     url: https://github.com/BryceLagerberg/AndroidApp.git
@@ -24,14 +24,14 @@ MonoBehaviour:
     function: 0
     token: 
   currentGitBranch:
-    name: main
-    tracking: origin/main
+    name: SetupBudgetTracker
+    tracking: 
   currentConfigBranch:
-    name: main
+    name: SetupBudgetTracker
     remote:
-      name: origin
-      url: https://github.com/BryceLagerberg/AndroidApp.git
-    trackingBranch: main
+      name: 
+      url: 
+    trackingBranch: 
   currentConfigRemote:
     name: origin
     url: https://github.com/BryceLagerberg/AndroidApp.git
