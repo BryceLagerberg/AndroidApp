@@ -58,10 +58,12 @@ namespace GameSpace
                     // Ai Logic
                     if (GameBall.transform.position.y > this.transform.position.y && GameBall.GetComponent<Rigidbody2D>().velocity.x > 0)
                     {
+                        if (this.transform.position.y + incrementValue > GameBall.transform.position.y) { incrementValue = GameBall.transform.position.y - this.transform.position.y; }
                         this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y + incrementValue, 0);
                     }
                     else if (GameBall.transform.position.y < this.transform.position.y && GameBall.GetComponent<Rigidbody2D>().velocity.x > 0)
                     {
+                        if (this.transform.position.y - incrementValue < GameBall.transform.position.y) { incrementValue = GameBall.transform.position.y + -1*this.transform.position.y; }
                         this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y - incrementValue, 0);
                     }
                 }
